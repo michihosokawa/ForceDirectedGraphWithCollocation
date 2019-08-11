@@ -1,0 +1,93 @@
+html, body {
+	margin:0;
+	padding:0;
+	font-size: 0.9em;
+	text-align: center;
+	background-color:#F2F2F2;
+}
+
+h4 {
+	color:blue;
+	font-size:1.1em;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+}
+
+
+#container {
+	width: 1200px;
+	height: 600px;
+	margin:0 auto;
+	position:relative;
+}
+
+#left-container, 
+#center-container {
+	height:600px;
+	position:absolute;
+	top:0;
+}
+
+#left-container {
+	width:200px;
+	left:0;
+	color:#686c70;
+	text-align: left;
+	overflow: auto;
+	background-color:#fff;
+	background-repeat:no-repeat;
+	background-position:center right;
+	border-bottom:1px solid #ddd;
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+	z-index:1;
+}
+
+#center-container {
+	width:1000px;
+	left:100px;
+	background-color:white;
+	color:#ccc;
+}
+
+.text {
+	margin: 7px;
+}
+
+select {
+	font-size: 14px;
+	width: 180px;
+}
+
+input {
+	font-size: 14px;
+	width: 80px;
+}
+
+
+
+#id-list {
+	padding:0.5em 0.5em ;
+}
+
+input#unlock,
+input#shake {
+	font-size: 14px;
+	width: 95px;
+}
+
+input#g0_black,
+input#g0_zero {
+	font-size: 14px;
+	width: 40px;
+}
+
+.link {
+  stroke: #ccc;
+}
+
+.node text {
+  pointer-events: none;
+  font: 10px sans-serif;
+}

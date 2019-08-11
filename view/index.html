@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<meta charset="utf-8">
+<html lang="jp">
+	<head>
+		<title>共起情報可視化</title>
+
+		<!-- CSS Files -->
+		<link type="text/css" href="graph_view.css" rel="stylesheet" />
+
+		<!-- Library File -->
+		<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+
+		<!-- Javascript File -->
+		<script type="text/javascript" src="graph_view.js"></script>
+		<script type="text/javascript" src="graph_json.js"></script>
+	</head>
+	<body onload="exec();">
+
+	<div id="container">
+		<div id="left-container">
+
+			<div class="text"><h4>共起情報可視化</h4></div>
+			<div id="id-list">
+				<div style="color:blue;">キーワード</div>
+				<select id="words_list" size="15"></select>
+			</div>
+			<hr />
+			<div>
+					<input type="button" id="unlock" value="固定点解除" />
+					<input type="button" id="shake"  value="振動" />
+			</div>
+			<div>&nbsp;背景グラフ <input type="button" id="g0_black" value="有" /><input type="button" id="g0_zero"  value="無" /></div>
+		</div>
+
+		<div id="center-container"></div>
+		</div>
+	</div>
+	</body>
+</html>
